@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "50183441186",
+    "firebase_url": "https://air-quality-b7072-default-rtdb.firebaseio.com",
+    "project_id": "air-quality-b7072",
+    "storage_bucket": "air-quality-b7072.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50183441186:android:41dd0c1475464b931b337b",
+        "android_client_info": {
+          "package_name": "com.asl.awair"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgT7QQWK2Ui-dbP4n4Ww5giI5rxjJriAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
