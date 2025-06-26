@@ -47,9 +47,12 @@ class _SmokeAlertHomePageState extends State<SmokeAlertHomePage> {
         alertStatus = data;
       });
 
-      if (data == "Smoke detected" && !smsSent) {
+      if (data == "Gas Still Present" && !smsSent) {
         sendSmsAlert();
-      } else if (data == "Clear") {
+      }else if(data == "Smoke/Gas Detected"){
+        smsSent = false;
+      } 
+      else if (data == "Clear") {
         smsSent = false; // Reset SMS trigger
       }
     });
@@ -61,7 +64,7 @@ class _SmokeAlertHomePageState extends State<SmokeAlertHomePage> {
     if (granted) {
       await telephony.sendSms(
         to: "09150526494", // ← Replace with your number
-        message: "⚠️ Smoke has been detected! Please check your environment.",
+        message: "⚠️ Smoke/Gas has been detected for 1 minute!",
       );
       smsSent = true;
     } else {

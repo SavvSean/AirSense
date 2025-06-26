@@ -1,4 +1,4 @@
-package com.example.smoke_alert_app
+package com.asl.awair
 
 import io.flutter.embedding.android.FlutterActivity
 
